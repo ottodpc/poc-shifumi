@@ -2,7 +2,7 @@ import React from "react";
 import { Choice } from "../interfaces";
 
 interface ScoreDisplayProps {
-  player: string;
+  player: "Me" | "AI";
   score: number;
   imageSrc?: string;
   choice?: Choice;
@@ -21,9 +21,27 @@ const ScoreDisplay: React.FC<ScoreDisplayProps> = ({
           player === "Me" ? "end" : "start"
         } font-bold text-black whitespace-nowrap h-[456px] max-md:mt-7 max-md:max-w-full`}
       >
-        <p className="text-8xl max-md:text-4xl">{player}</p>
-        <p className="text-3xl text-left max-md:text-1xl">{choice}</p>
-        <p className="text-3xl text-left max-md:text-1xl">{score}</p>
+        <p
+          className={`text-8xl max-md:text-4xl ${
+            player === "Me" ? "text-right" : "text-left"
+          } `}
+        >
+          {player}
+        </p>
+        <p
+          className={`text-3xl ${
+            player === "Me" ? "text-right" : "text-left"
+          } max-md:text-1xl`}
+        >
+          {choice}
+        </p>
+        <p
+          className={`text-3xl ${
+            player === "Me" ? "text-right" : "text-left"
+          } max-md:text-1xl`}
+        >
+          {score}
+        </p>
         <img
           loading="lazy"
           src={imageSrc}

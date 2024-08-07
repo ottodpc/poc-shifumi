@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/poc-shifumi/static/css/main.4bf785ac.css",
+    "main.js": "/poc-shifumi/static/js/main.88803b80.js",
+    "static/js/453.e6fbca7d.chunk.js": "/poc-shifumi/static/js/453.e6fbca7d.chunk.js",
+    "static/media/MePaper.png": "/poc-shifumi/static/media/MePaper.294e4dbfca943319f4a6.png",
+    "static/media/MeRock.png": "/poc-shifumi/static/media/MeRock.124c235e0c470fb16ef8.png",
+    "static/media/AIPaper.png": "/poc-shifumi/static/media/AIPaper.93737f1161b9b88fd0ca.png",
+    "static/media/AIRock.png": "/poc-shifumi/static/media/AIRock.8c9773cdca8c98e4ff2f.png",
+    "static/media/AIScissors.png": "/poc-shifumi/static/media/AIScissors.ac087d879817c8a183b2.png",
+    "static/media/MeScissors.png": "/poc-shifumi/static/media/MeScissors.18cdf97ccceabdbbcd23.png",
+    "index.html": "/poc-shifumi/index.html",
+    "main.4bf785ac.css.map": "/poc-shifumi/static/css/main.4bf785ac.css.map",
+    "main.88803b80.js.map": "/poc-shifumi/static/js/main.88803b80.js.map",
+    "453.e6fbca7d.chunk.js.map": "/poc-shifumi/static/js/453.e6fbca7d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4bf785ac.css",
+    "static/js/main.88803b80.js"
+  ]
+}

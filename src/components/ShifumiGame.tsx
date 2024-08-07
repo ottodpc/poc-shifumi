@@ -54,7 +54,7 @@ const ShifumiGame: React.FC<RockPaperScissorsProps> = () => {
             </>
           ) : null}
         </div>
-        <p className="text-4xl text-center mt-10">{result}</p>
+        <p className="text-4xl text-center">{result}</p>
       </section>
       <ChoicePrompt />
       <GameOptions getChoice={handlePlayerChoice} />
