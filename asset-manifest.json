@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/poc-shifumi/static/css/main.4f5b2040.css",
-    "main.js": "/poc-shifumi/static/js/main.bc4fc30b.js",
+    "main.css": "/poc-shifumi/static/css/main.afe395a5.css",
+    "main.js": "/poc-shifumi/static/js/main.efc83398.js",
     "static/js/453.e6fbca7d.chunk.js": "/poc-shifumi/static/js/453.e6fbca7d.chunk.js",
     "static/media/MePaper.png": "/poc-shifumi/static/media/MePaper.294e4dbfca943319f4a6.png",
     "static/media/MeRock.png": "/poc-shifumi/static/media/MeRock.124c235e0c470fb16ef8.png",
@@ -10,12 +10,12 @@
     "static/media/AIScissors.png": "/poc-shifumi/static/media/AIScissors.ac087d879817c8a183b2.png",
     "static/media/MeScissors.png": "/poc-shifumi/static/media/MeScissors.18cdf97ccceabdbbcd23.png",
     "index.html": "/poc-shifumi/index.html",
-    "main.4f5b2040.css.map": "/poc-shifumi/static/css/main.4f5b2040.css.map",
-    "main.bc4fc30b.js.map": "/poc-shifumi/static/js/main.bc4fc30b.js.map",
+    "main.afe395a5.css.map": "/poc-shifumi/static/css/main.afe395a5.css.map",
+    "main.efc83398.js.map": "/poc-shifumi/static/js/main.efc83398.js.map",
     "453.e6fbca7d.chunk.js.map": "/poc-shifumi/static/js/453.e6fbca7d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4f5b2040.css",
-    "static/js/main.bc4fc30b.js"
+    "static/css/main.afe395a5.css",
+    "static/js/main.efc83398.js"
   ]
 }
