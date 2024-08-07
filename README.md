@@ -1,46 +1,46 @@
-# Getting Started with Create React App
+<h1 align="center" id="title">Shifumi Game</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center"><img src="https://raw.githubusercontent.com/ottodpc/poc-shifumi/main/Game-Screen.png" alt="project-image"></p>
 
-## Available Scripts
+<p id="description">Simple shifumi game with Reactjs. UI Design : https://www.figma.com/community/file/1107014757518562957/rock-paper-scissors-game</p>
 
-In the project directory, you can run:
+<h2>🚀 Demo</h2>
 
-### `npm start`
+[https://ottodpc.github.io/poc-shifumi/](https://ottodpc.github.io/poc-shifumi/)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<h2>Project Screenshots:</h2>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+<img src="https://raw.githubusercontent.com/ottodpc/poc-shifumi/main/Game-Screen.png" alt="project-screenshot" width="300" height="200/">
 
-### `npm test`
+<h2>🛠️ Installation Steps:</h2>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<p>1. clone the project</p>
 
-### `npm run build`
+```
+git clone git@github.com:ottodpc/poc-shifumi.git
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<p>2. install deps</p>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
+ cd ./poc-shifumi && yarn
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<p>3. start the project</p>
 
-### `npm run eject`
+```
+yarn start
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+<h2>💻 Built with</h2>
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Technologies used in the project:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- React.js
+- Tailwind
+- GithubActions
+- GithubPage
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+<h2>🛡️ License:</h2>
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+This project is licensed under the MIT
