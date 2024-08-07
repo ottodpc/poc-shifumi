@@ -1,37 +1,64 @@
 import React, { useState } from "react";
-import { Choice } from "../interfaces";
+import { ChoicesProps, ResultMessage } from "../interfaces";
 import { getRandomChoice, getResult } from "../utils";
+import ScoreDisplay from "./ScoreDisplay";
+import ChoicePrompt from "./ChoicePrompt";
+import GameOptions from "./GameOptions";
 
-const ShifumiGame: React.FC = () => {
-  const [playerChoice, setPlayerChoice] = useState<Choice | null>(null);
-  const [computerChoice, setComputerChoice] = useState<Choice | null>(null);
-  const [result, setResult] = useState<string>("");
+interface RockPaperScissorsProps {}
 
-  const handlePlayerChoice = (choice: Choice) => {
+const ShifumiGame: React.FC<RockPaperScissorsProps> = () => {
+  const [playerChoice, setPlayerChoice] = useState<ChoicesProps | null>(null);
+  const [computerChoice, setComputerChoice] = useState<ChoicesProps | null>(
+    null
+  );
+  const [result, setResult] = useState<ResultMessage>(
+    ResultMessage.StartTheGame
+  );
+  const [playerScore, setPlayerScore] = useState<number>(0);
+  const [computerScore, setComputerScore] = useState<number>(0);
+
+  const handlePlayerChoice = async (choice: ChoicesProps) => {
     const computer = getRandomChoice();
+    const {
+      message,
+      playerScore: newPlayerScore,
+      computerScore: newComputerScore,
+    } = await getResult(choice.name, computer.name, playerScore, computerScore);
+
     setPlayerChoice(choice);
     setComputerChoice(computer);
-    setResult(getResult(choice, computer));
+    setResult(message);
+    setPlayerScore(newPlayerScore);
+    setComputerScore(newComputerScore);
   };
 
   return (
-    <div style={{ textAlign: "center", marginTop: "50px" }}>
-      <h1>Shifumi</h1>
-      <div>
-        {[Choice.Rock, Choice.Paper, Choice.Scissors].map((choice) => (
-          <button key={choice} onClick={() => handlePlayerChoice(choice)}>
-            {choice}
-          </button>
-        ))}
-      </div>
-      {playerChoice && computerChoice && (
-        <div>
-          <h2>My choice: {playerChoice}</h2>
-          <h2>Adversaire's choice: {computerChoice}</h2>
-          <h2>{result}</h2>
+    <main className="flex overflow-hidden flex-col py-20 pl-6 bg-white max-md:pl-5">
+      <section className="max-md:max-w-full">
+        <div className="flex gap-5 max-md:flex-col">
+          {playerChoice && computerChoice ? (
+            <>
+              <ScoreDisplay
+                choice={playerChoice?.name}
+                player="Me"
+                score={playerScore}
+                imageSrc={playerChoice?.MeImg}
+              />
+              <ScoreDisplay
+                choice={computerChoice?.name}
+                player="AI"
+                score={computerScore}
+                imageSrc={computerChoice?.AIImg}
+              />
+            </>
+          ) : null}
         </div>
-      )}
-    </div>
+        <p className="text-4xl text-center mt-10">{result}</p>
+      </section>
+      <ChoicePrompt />
+      <GameOptions getChoice={handlePlayerChoice} />
+    </main>
   );
 };
 
